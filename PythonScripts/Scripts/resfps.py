@@ -52,9 +52,9 @@ try:
        for resolution, frame_rate in zip(RESOLUTIONS, FRAME_RATES):
           record_video(resolution, frame_rate)
 except KeyboardInterrupt:
-    camera.stop_preview()
+    camera.stop_preview() ## G - still no camera object?
     endstamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S.%f")
-    print("Previewing stopped at:" endstamp) 
+    print("Previewing stopped at:" endstamp)  
 
 
 

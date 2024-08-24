@@ -4,12 +4,12 @@ import math
 
 
 fps = 168
-pixel_size = 0.00345 #in mm so it is 3.45 μm
+pixel_size = 0.00345 #in mm so it is 3.45 μm            ## G - should this not all be in a class? 
 resolution_width = 1920
 resolution_height = 1200
 senor_size_x = 6.6 #mm
 senor_size_y = 4.1 #mm
-sensor_diagnol = 7.7 #mm  (we want lens to be larger than sensor diagnol)
+sensor_diagnol = 7.7 #mm  (we want lens to be larger than sensor diagnol)    ## G - Diagonal?
 working_distance = 400 #mm
 print ("Working distance is:", working_distance , "mm")
 
@@ -18,7 +18,7 @@ def laser_sheet(fan_angle):
 #the height of the sheet     
     alpha = math.radians(fan_angle/2) 
     y = working_distance * math.tan(alpha)
-    height = 2*y
+    height = 2*y                            
     print ("height of laser sheet:", height, "mm")
 
 #the width of sheet

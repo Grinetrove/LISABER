@@ -19,6 +19,6 @@ try:
     while True:
         record_video()    
 except KeyboardInterrupt:
-    camera.stop_preview()
+    camera.stop_preview()   ## G - camera undefined? included in picamera??
     endstamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S.%f")
     print("Previewing stopped at:" endstamp) 

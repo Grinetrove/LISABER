@@ -1,11 +1,11 @@
 #! /bin/bash  --- edit this 
 
-import os
-import subprocess
+import os                   
+import subprocess           
 import numpy as np
 from time import sleep
 from datetime import datetime
-import RPi.GPIO as GPIO
+import RPi.GPIO as GPIO    
 import picamera 
 
 
@@ -38,7 +38,7 @@ def record_video():
 # Main loop to continuously record every 5 minutes
 tick = datetime.now() 
 while True:
-    record_video() #recording continously
+    record_video() #recording continuously
     # Wait for 5 minutes before recording the next video
     # time.sleep(300)
     if (datetime.now() - tick).seconds > 30:

@@ -1,9 +1,9 @@
 
 from time import sleep
 from datetime import datetime 
-import os 
+import os  ## G - ??
 from subprocess import call
-import numpy as np
+import numpy as np ## G - ??
 import math
 
 
@@ -18,5 +18,8 @@ def height(d, angle):
 y = fan_angle(19,19.5)
 x = height(17,y)
 print(x)
+
+
+## G - Should be class functions
                                 
 

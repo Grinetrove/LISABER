@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 max_macroblocks_per_second = 245760
 max_macroblocks_per_frame = 8192
-print ("\n","macroblocks/frame can not exceed this number:" , max_macroblocks_per_frame,"\n")
+print ("\n","macroblocks/frame can not exceed this number:" , max_macroblocks_per_frame,"\n")   
 
 spacing = 300  #can change this number to see the specific resolution 
 desired_fps = np.linspace(1,300, spacing, True)
@@ -28,6 +28,6 @@ plt.ylabel("Macroblocks/frame")
 plt.xlabel("frames/second")
 plt.grid(color = 'green', linestyle = '--', linewidth = 0.5)
 plt.legend(loc="upper right")
-matplotlib.pyplot.ylim(0,10000)
+matplotlib.pyplot.ylim(0,10000)             ## G - defined as plt??
 plt.show() 
 
